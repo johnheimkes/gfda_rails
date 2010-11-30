@@ -6,7 +6,7 @@
     <meta name="Robots" content="index,all" /> 
     <meta name="Keywords" content="good, fucking, dating, advice" /> 
     <meta name="Description" content="Good Fucking Dating Advice &mdash; Your guide to dating since two thousand fucking ten." /> 
-    <%= stylesheet_link_tag :all %>
+    <%= stylesheet_link_tag "style" %>
     <%= csrf_meta_tag %>
   </head> 
   <body> 
@@ -21,9 +21,7 @@
       <div id="content"> 
         <div class="separator"></div>
         <%= yield %>
-        <div class="advice hers"> 
-          <a href="/show/14"><h2>Keep the fucking conversation interesting and on topic.</h2></a> 
-        </div> 
+        
         <div class="separator"></div> 
       </div> 
       <div id="footer"> 
