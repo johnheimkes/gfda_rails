@@ -1,14 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Gfda</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+<!DOCTYPE html> 
+<html lang="en" xml:lang="en"> 
+  <head> 
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" /> 
+    <title>Good Fucking Dating Advice.</title> 
+    <meta name="Robots" content="index,all" /> 
+    <meta name="Keywords" content="good, fucking, dating, advice" /> 
+    <meta name="Description" content="Good Fucking Dating Advice &mdash; Your guide to dating since two thousand fucking ten." /> 
+    <%= stylesheet_link_tag :all %>
+    <%= csrf_meta_tag %>
+  </head> 
+  <body> 
+    <div id="wrapper"> 
+      <div id="header"> 
+        <div id="filter"> 
+          <h2 id="his"><a href="/his">His</a></h2> 
+          <h2 id="hers"><a href="/hers">Hers</a></h2> 
+        </div> 
+        <h1><a href="/">Good Fucking Dating Advice</a></h1> 
+      </div> 
+      <div id="content"> 
+        <div class="separator"></div>
+        <%= yield %>
+        <div class="advice hers"> 
+          <a href="/show/14"><h2>Keep the fucking conversation interesting and on topic.</h2></a> 
+        </div> 
+        <div class="separator"></div> 
+      </div> 
+      <div id="footer"> 
+        <h3>More Fucking Information</h3> 
+        <ul id="nav"> 
+          <li><a href="/about">WTF is this?</a></li> 
+          <li><a href="/friendly">Youngin' Fucking Friendly</a></li> 
+          <li><a href="/help">Fucking Help Us</a></li> 
+        </ul> 
+        
+        <p class="copy">&copy; 2010 MarkupIsArt &mdash; Inspired by <a href="http://goodfuckingdesignadvice.com" target="_blank" title="Good Fucking Design Advice.">this</a>.</p> 
+      </div>  
+    </div> 
+  </body> 
 </html>
