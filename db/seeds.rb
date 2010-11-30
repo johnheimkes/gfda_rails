@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+Tip.create([
+  {:body => "Hold her fucking hand.", :email => "johnh@ang.st", :gender => "his"},
+  {:body => "Don't be a fucking creeper", :email => "johnh@ang.st", :gender => "hers"}}
+])
