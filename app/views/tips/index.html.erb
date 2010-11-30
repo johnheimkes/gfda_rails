@@ -1,0 +1,27 @@
+<h1>Listing tips</h1>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Body</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tips.each do |tip| %>
+  <tr>
+    <td><%= tip.email %></td>
+    <td><%= tip.gender %></td>
+    <td><%= tip.body %></td>
+    <td><%= link_to 'Show', tip %></td>
+    <td><%= link_to 'Edit', edit_tip_path(tip) %></td>
+    <td><%= link_to 'Destroy', tip, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tip', new_tip_path %>
