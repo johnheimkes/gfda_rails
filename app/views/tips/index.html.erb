@@ -1,3 +1,4 @@
-<div class="advice hers"> 
-  <a href="/show/14"><h2>Keep the fucking conversation interesting and on topic.</h2></a> 
+<div class="advice <%= @tip.gender %>"> 
+  <!-- <a href="/show/14"><h2>Keep the fucking conversation interesting and on topic.</h2></a> -->
+  <h2><%= link_to @tip.body, tip_url(@tip) %></h2>
 </div>

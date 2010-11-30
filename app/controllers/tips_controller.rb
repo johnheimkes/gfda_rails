@@ -1,6 +1,6 @@
 class TipsController < ApplicationController
   def index
-    @tips = Tip.all
+    @tip = Tip.first(:order => "random()")
 
     respond_to do |format|
       format.html
